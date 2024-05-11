@@ -49,6 +49,8 @@ G2L["5"]["Size"] = UDim2.new(0, 389, 0, 50);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5"]["Text"] = [[https://dsc.gg/isotope]];
 G2L["5"]["Position"] = UDim2.new(0, 0, 0.41905, 0);
-
+print(" _t38, geistah, kiosk")
+print("sivy is a nigger")
+print("Isotope forever and always undetected")
 
 return G2L["1"], require;

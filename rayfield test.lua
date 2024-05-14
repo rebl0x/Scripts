@@ -121,9 +121,6 @@ Rayfield.Enabled = false
 
 if gethui then
 	Rayfield.Parent = gethui()
-elseif syn.protect_gui then 
-	syn.protect_gui(Rayfield)
-	Rayfield.Parent = CoreGui
 elseif CoreGui:FindFirstChild("RobloxGui") then
 	Rayfield.Parent = CoreGui:FindFirstChild("RobloxGui")
 else
@@ -161,7 +158,7 @@ LoadingFrame.Version.Text = Release
 
 -- Variables
 
-local request = (syn and syn.request) or (http and http.request) or http_request
+local request = (http and http.request) or http_request
 local CFileName = nil
 local CEnabled = false
 local Minimised = false
@@ -997,9 +994,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			if gethui then
 				KeyUI.Parent = gethui()
-			elseif syn.protect_gui then
-				syn.protect_gui(Rayfield)
-				KeyUI.Parent = CoreGui
 			else
 				KeyUI.Parent = CoreGui
 			end

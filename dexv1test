@@ -1,6 +1,9 @@
---[[ Dex Loader by cirmolddry#2299 ]] 
---celery re-work by _t38
 print("DEXV1 edit by _t38, original by cirmolddry#2299")
+
+function getobjects(a1) 
+    return { game:GetService("InsertService"):LoadLocalAsset(a1) }
+end
+
 local Dex = getobjects("rbxassetid://17494230084")[1]:children()[1]
 math.randomseed(tick())
 

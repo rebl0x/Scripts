@@ -21,7 +21,8 @@ end
 
 Dex.Name = RandomCharacters(math.random(5, 20))
 Dex.Parent = game:GetService("CoreGui")
-
+local Selection = Dex:WaitForChild("Selection")
+Selection.Enabled = True
 local function Load(Obj, Url)
 	local function GiveOwnGlobals(Func, Script)
 		local Fenv = {}
